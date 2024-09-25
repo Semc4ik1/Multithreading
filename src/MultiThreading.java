@@ -22,14 +22,14 @@ public class MultiThreading implements Runnable {
                     int number = Integer.parseInt(numberString);
                     synchronized (MultiThreading.class) {
                         if (number % 2 == 0) {
-                            result[0]++; // Увеличиваем счетчик четных
+                            result[0]++;
                         } else {
-                            result[1]++; // Увеличиваем счетчик нечетных
+                            result[1]++;
                         }
                     }
                 } catch (NumberFormatException e) {
                     System.err.println(STR."Ошибка преобразования строки в число: \{numberString}");
-                    // Здесь можно обработать ошибку по вашему усмотрению
+
                 }
             }
         }
